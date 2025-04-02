@@ -1,0 +1,159 @@
+/* Estilos personalizados para el tema Sophia */
+
+// Variables de colores personalizados
+$primary: #121631;
+$secondary: #ff9500;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// Barra lateral oscura
+.drawer {
+    background-color: $primary !important;
+    color: white !important;
+
+    // Enlaces en la barra lateral
+    a, .list-group-item {
+        color: white !important;
+    }
+
+    // Destacar elemento activo
+    .list-group-item.active {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        border-left: 3px solid $secondary !important;
+    }
+}
+
+// Logo y título del sitio
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+// Encabezado del curso
+.page-header-headings h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $primary;
+}
+
+// Estilo para los temas del curso
+.section {
+    margin-bottom: 2rem;
+    
+    .section-title {
+        border-bottom: 2px solid $primary;
+        padding-bottom: 0.5rem;
+    }
+
+    .activity {
+        border-radius: 5px;
+        border: 1px solid #e9ecef;
+        padding: 10px;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+// Iconos de actividades
+.activityiconcontainer {
+    background-color: $light;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+// Barra de progreso
+.progress {
+    height: 0.8rem;
+    
+    .progress-bar {
+        background-color: $success;
+    }
+}
+
+// Bloques laterales
+.block {
+    border-radius: 5px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    
+    .card-header {
+        background-color: white;
+        border-bottom: 1px solid #e9ecef;
+        font-weight: bold;
+    }
+}
+
+// Botones principales
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    
+    &:hover {
+        background-color: darken($primary, 10%);
+        border-color: darken($primary, 10%);
+    }
+}
+
+// Botones secundarios
+.btn-secondary {
+    background-color: $secondary;
+    border-color: $secondary;
+    
+    &:hover {
+        background-color: darken($secondary, 10%);
+        border-color: darken($secondary, 10%);
+    }
+}
+
+// Navegación del curso
+.course-content .section-navigation {
+    background-color: $light;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+// Personalizar el icono de colapsar/expandir
+.toggle-display .expanded-icon,
+.toggle-display .collapsed-icon {
+    color: $primary;
+}
+
+// Estilo de las actividades próximas
+.block_calendar_upcoming {
+    .event {
+        padding: 8px;
+        border-left: 3px solid $secondary;
+        margin-bottom: 8px;
+        background-color: $light;
+    }
+}
+
+// Tema de actividades
+.activity-item {
+    &:not(.activityinline) {
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        padding: 1rem;
+        
+        &:hover {
+            background-color: rgba(0,0,0,.03);
+        }
+    }
+}
+
+// Pie de página
+#page-footer {
+    background-color: $primary;
+    color: white;
+    
+    a {
+        color: $light;
+    }
+}
