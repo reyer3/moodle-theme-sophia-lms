@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <!-- Hexágono con degradado -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff5e3a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hexágono -->
+  <polygon points="30,10 45,18 45,42 30,50 15,42 15,18" fill="url(#gradient)" />
+  
+  <!-- Símbolo S dentro del hexágono -->
+  <path d="M25,20 C28,18 35,18 35,23 C35,28 25,28 25,33 C25,38 32,38 35,36" 
+        stroke="white" stroke-width="3" fill="none" stroke-linecap="round" />
+  
+  <!-- Texto "Sophia" -->
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">Sophia</text>
+</svg>
